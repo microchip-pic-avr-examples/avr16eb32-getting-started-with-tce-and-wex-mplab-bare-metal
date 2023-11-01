@@ -37,16 +37,16 @@
             }
         },
         "author": "Teodor Lina",
-        "peripherals": ["Timer/Counter type E and Waveform Extension"],
+        "peripherals": [
+			"Timer/Counter type E",
+			"WEX"
+	],
         "keywords": [
             "Getting Started",
-            "Timer",
             "TCE",
             "WEX",
             "Timing Module",
-            "PWM",
             "Waveform Generator",
-            "Module",
             "PWM Controller",
             "Signal Generation"
     ],

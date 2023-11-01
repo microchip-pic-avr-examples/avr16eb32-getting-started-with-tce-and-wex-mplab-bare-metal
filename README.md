@@ -1,6 +1,6 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Getting Started with Timer/Counter Type E (TCE) and WEX
+# Getting Started with Timer/Counter Type E (TCE) and WEX bare metal
 
 This repository contains examples of bare metal source code for the new TCE and WEX peripherals of the AVR<sup>®</sup> EB family of devices. There are three applications described in this document. Each application's functionality is explained.
 
