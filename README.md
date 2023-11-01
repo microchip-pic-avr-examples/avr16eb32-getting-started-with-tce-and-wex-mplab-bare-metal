@@ -1,45 +1,32 @@
-<!-- Please do not change this logo with link -->
-
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Update the title for avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal here
+# Getting Started with Timer/Counter Type E (TCE) and WEX
 
-<!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
+This repository contains examples of bare metal source code for the new TCE and WEX peripherals of the AVR<sup>®</sup> EB family of devices. There are three applications described in this document. Each application's functionality is explained.
+
+ * [<strong>Generate 4 PWM signals using TCE:</strong>](TCE_DS_4PWM_Signals) In this use case, initialize the timer in Dual Slope Mode to generate 4 PWM signals with different duty cycles, scaling and high resolution option. (For more details, see [<strong>Generate 4 PWM signals using TCE</strong>](TCE_DS_4PWM_Signals)).
+  * [<strong>Generate a pattern for 8 signals using WEX:</strong>](WEX_PGM_8Channels_Patterns) This example shows how to use the WEX to generate different patterns, and take control of the Timer Counter type E (TCE) pins during run time, without stopping the timer. This is extremely useful for applications like trapezoidal motor control for example, where some PWM signals must be forced to low '0' logic depending on the commutation sector. (For more details, see [<strong>Generate a pattern for 8 signals using WEX</strong>](WEX_PGM_8Channels_Patterns)).
+  * [<strong>Generate 8 complementary waveform output signals with fault detection using TCE and WEX:</strong>](TCE_AND_WEX_8_Complementary_PWM) In this example the TCE timer is initialized in Single Slope mode and generates 4 PWM signals. WEX is configured to split the 4 PWM signals into 8 complementary PWM signals with dead time. The PWM signals have different duty cycles, that get incremented in 0-100% range minus dead time. Duty cycles increment happens in ISR routines during each compare register interrupt. A fault is triggered at every 250 μs, driving all the outputs to low ‘0’ logic. Then the fault is cleared and normal operation is restored. After that, the process repeats itself over and over again. (For more details, see [<strong>Generate 8 complementary waveform output signals with fault detection using TCE and WEX</strong>](TCE_AND_WEX_8_Complementary_PWM)).
 
 ## Related Documentation
 
-<!-- Any information about an application note or tech brief can be linked here. Use unbreakable links!
-     In addition a link to the device family landing page and relevant peripheral pages as well:
-     - [AN3381 - Brushless DC Fan Speed Control Using Temperature Input and Tachometer Feedback](https://microchip.com/00003381/)
-     - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family) -->
+More details and code examples on the AVR16EB32 can be found at the following links:
+
+- [AVR<sup>®</sup> EB Product Page](https://www.microchip.com/en-us/product/AVR16EB32)
+- [AVR<sup>®</sup> EB Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=AVR16EB32)
 
 ## Software Used
 
-<!-- All software used in this example must be listed here. Use unbreakable links!
-     - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-     - MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-     - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - Microchip PIC18F-Q Series Device Support (1.4.109) or newer [(packs.download.microchip.com/)](https://packs.download.microchip.com/) -->
-
-- MPLAB® X IDE 6.15.0 or newer [(MPLAB® X IDE 6.15)](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_MPAE_Examples&utm_content=avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal-github)
-- MPLAB® XC8 2.45.0 or newer compiler [(MPLAB® XC8 2.45)](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_MPAE_Examples&utm_content=avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal-github)
+- [MPLAB® X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
+- [AVR-Ex DFP-2.7.184 or newer Device Pack](https://packs.download.microchip.com/)
+- [MPLAB® XC8 compiler v2.45](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/downloads-documentation#XC8)
 
 ## Hardware Used
 
-<!-- All hardware used in this example must be listed here. Use unbreakable links!
-     - PIC18F47Q10 Curiosity Nano [(DM182029)](https://www.microchip.com/Developmenttools/ProductDetails/DM182029)
-     - Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162)
-     - POT Click board™ [(MIKROE-3402)](https://www.mikroe.com/pot-click) -->
+- [AVR<sup>®</sup> EB Curiosity Nano](https://www.microchip.com/en-us/product/AVR16EB32)
 
 ## Setup
 
-<!-- Explain how to connect hardware and set up software. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+The AVR16EB32 Curiosity Nano Development Board is used as test platform.
 
-## Operation
-
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
-
-## Summary
-
-<!-- Summarize what the example has shown -->
+<br><img src="images/AVR16EB32_Cnano_Board.png">
