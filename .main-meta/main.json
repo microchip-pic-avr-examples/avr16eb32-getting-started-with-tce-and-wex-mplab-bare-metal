@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Getting Started with Timer/Counter Type E (TCE) and WEX bare metal",
         "projectName": "avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal",
         "shortDescription": "This repository contains examples of bare metal source code for the TCE and WEX peripherals of the AVR EB family of devices.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Ex_DFP",
+            "semverRange": "^2.7.184"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "N/A",
+            "semverRange": " "
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -37,8 +37,19 @@
             }
         },
         "author": "Teodor Lina",
-        "peripherals": [],
-        "keywords": [],
+        "peripherals": ["Timer/Counter type E and Waveform Extension"],
+        "keywords": [
+            "Getting Started",
+            "Timer",
+            "TCE",
+            "WEX",
+            "Timing Module",
+            "PWM",
+            "Waveform Generator",
+            "Module",
+            "PWM Controller",
+            "Signal Generation"
+    ],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
