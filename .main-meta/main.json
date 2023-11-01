@@ -1,0 +1,54 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mcu8.mplabx.project.avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal",
+        "version": " ",
+        "displayName": "",
+        "projectName": "avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal",
+        "shortDescription": "This repository contains examples of bare metal source code for the TCE and WEX peripherals of the AVR EB family of devices.",
+        "ide": {
+            "name": "MPLAB X",
+            "semverRange": ">=6.15.0"
+        },
+        "compiler": [
+            {
+                "name": "XC8",
+                "semverRange": "^2.45.0"
+            }
+        ],
+        "dfp": {
+            "name": "",
+            "semverRange": ""
+        },
+        "configurator": {
+            "name": "",
+            "semverRange": ""
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": "AVR16EB32",
+                "versionRange": "*"
+            }
+        },
+        "author": "Teodor Lina",
+        "peripherals": [],
+        "keywords": [],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}
