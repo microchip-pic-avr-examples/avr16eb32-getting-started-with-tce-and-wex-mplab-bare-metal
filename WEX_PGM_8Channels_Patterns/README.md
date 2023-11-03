@@ -1,8 +1,8 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Use case 2: Generate PWM signals using TCE
+## Use Case 2: Generate Patterns Using WEX
 
-A basic use case of the timer’s waveform extension is to set a pattern for the output signals that changes periodically. The program will toggle the pins (complementary pattern) every 25 μs using software delay for 10 times and after another 250 μs a stairs pattern will be generated with 5μs delay between each step. After another 1ms delay the process repeats.
+A basic use case of the timer’s waveform extension is to set a pattern for the output signals that changes periodically. The program will toggle the pins (complementary pattern) every 25 μs using software delay for ten times. After another 250 μs a stair-like pattern will be generated, with 5 μs delay between each step. After another 250 μs delay, the process repeats.
 
 ## Related Documentation
 
@@ -27,9 +27,9 @@ The AVR16EB32 Curiosity Nano Development Board is used as a test platform.
 
 ## Functionality
 
-After the output port pins of WEX are configured, WEX is initialized and TCE is started, the ```Complementary_Pattern_Set``` and ```Stairs_Pattern_Set``` functions are called in an infinite loop. These functions change the output port pins state by overriding the current state with a new one. The update condition is done in software using delays. The WEX is configured in Pattern Generation Mode to be able to override the port pins outputs. The first function is used to generate a complementary pattern of 0 and 1 for the 8 output signals of WEX. After a 250μs delay the second function is called and a stairs pattern is generated. After another 250μs delay the process repeats in an infinite loop.
+After the output port pins of the Waveform Extension (WEX) are configured, WEX is initialized, Timer Counter type E (TCE) is started, the ```Complementary_Pattern_Set``` and ```Stairs_Pattern_Set``` functions are called in an infinite loop. These functions change the output port pins state by overriding the current state with a new one. The update condition is done in software using delays. The WEX is configured in Pattern Generation Mode to be able to override the port pins outputs. The first function is used to generate a complementary pattern of 0 and 1 for the eight output signals of WEX. After a 250 μs delay the second function is called and a stairs pattern is generated. After another 250 μs delay the process repeats in an infinite loop.
 
-## Functions that are called in an infinite loop
+## Functions Called in an Infinite Loop
 
 ```c
 void Complementary_Pattern_Set(void)
@@ -86,13 +86,13 @@ void Stairs_Pattern_Set(void)
 
  1. Connect the board to the PC.
 
- 2. Open the **WEX_PGM_8Channels_Patterns_MCC.X** or **WEX_PGM_8Channels_Patterns.X** solution in MPLAB X IDE.
+ 2. Open the **WEX_PGM_8Channels_Patterns.X** solution in MPLAB X IDE.
 
  3. Right click on the project and select **Set as main project**.
 
 <br><img src="../images/Set_as_main_project2.png">
 
- 4. Build the **WEX_PGM_8Channels_Patterns_MCC.X** or **WEX_PGM_8Channels_Patterns.X** project: click on **Clean and Build Project**.
+ 1. Build the **WEX_PGM_8Channels_Patterns.X** project: click on **Clean and Build Project**.
 
 <br><img src="../images/Clean_and_build2.png">
 
@@ -110,5 +110,4 @@ Below is illustrated a logic analyzer capture, to help understanding a little bi
 
 ## Summary
 
-This project shows how to use the WEX to generate different patterns, and take control of the Timer Counter type E (TCE) pins during run time, without stopping the timer. This is extremely
-useful for applications like for e.g. trapezoidal motor control, where some PWM signals must be forced to low '0' logic depending on the commutation sector.
+This project shows how to use the WEX to generate different patterns, and take control of the TCE pins during run time, without stopping the timer. This is extremely useful for applications like for e.g. trapezoidal motor control, where some PWM signals must be forced to low '0' logic depending on the commutation sector.

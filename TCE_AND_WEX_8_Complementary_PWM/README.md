@@ -1,6 +1,6 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Use case 3: Generate Eight Complementary Pulse-Width Modulation Signals Using the TCE and WEX modules
+## Use Case 3: Generate Eight Complementary Pulse-Width Modulation Signals Using the TCE and WEX modules
 
 Below is an example of how to set a Timer Counter Type E (TCE) and a Waveform Extension (WEX) instance to generate eight complementary Pulse-Width Modulation (PWM) signals at 20 kHz with a variable duty cycles using the buffering scheme. The signals are in pairs of two and are not overlapping due to the added dead time, a feature which is essential in Motor Control for avoiding the shoot-through current in transistor switching. The update of the Compare registers will happen during the compare match interrupts for each channel. In this example the fault is highlighted as well. When a software event is triggered all the signals are driven low. This happens every 250 μs. To do this, the WEX will be configured for fault detection and the Event System (EVSYS) will be configured to generate a software event. In this example the WEX module is used as a timer extension, not in Pattern Generation mode.
 
@@ -54,13 +54,13 @@ void Clear_Fault(void)
 
  1. Connect the board to the PC.
 
- 2. Open the **TCE_AND_WEX_8_Complementary_PWM_MCC.X** or **TCE_AND_WEX_8_Complementary_PWM.X** solution in MPLAB X IDE.
+ 2. Open the **TCE_AND_WEX_8_Complementary_PWM.X** solution in MPLAB X IDE.
 
  3. Right click on the project and select **Set as main project**.
 
 <br><img src="../images/Set_as_main_project3.png">
 
- 4. Build the **TCE_AND_WEX_8_Complementary_PWM_MCC.X** or **TCE_AND_WEX_8_Complementary_PWM.X** project: click on **Clean and Build Project**.
+ 1. Build the **TCE_AND_WEX_8_Complementary_PWM.X** project: click on **Clean and Build Project**.
 
 <br><img src="../images/Clean_and_build3.png">
 
