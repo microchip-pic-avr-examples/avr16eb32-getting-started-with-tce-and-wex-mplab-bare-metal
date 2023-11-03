@@ -35,7 +35,7 @@ The AVR16EB32 Curiosity Nano Development Board is used as a test platform.
 
 <br>The values in CMPBUF registers must be rewritten for the amplitude change to take place. To be able to see the changes on a logic analyzer a toggle pin is used at the end of the function. High resolution is also enabled and set to 4X, which means that one peripheral clock cycle duration get shortened 4 times. For example, a 20MHz clock speed one clock cycle duration is 50ns. With the high resolution enabled one clock cycle duration will be approximate 12.5 ns.
 
-## Function that is called in an infinite loop
+## Function Called in an Infinite Loop
 
 ```c
 void Amplitude_Value_Set(uint16_t value)
