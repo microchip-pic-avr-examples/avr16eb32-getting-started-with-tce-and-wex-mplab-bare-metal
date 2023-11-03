@@ -60,7 +60,7 @@ void Clear_Fault(void)
 
 <br><img src="../images/Set_as_main_project3.png">
 
- 1. Build the **TCE_AND_WEX_8_Complementary_PWM.X** project: click on **Clean and Build Project**.
+ 4. Build the **TCE_AND_WEX_8_Complementary_PWM.X** project: click on **Clean and Build Project**.
 
 <br><img src="../images/Clean_and_build3.png">
 

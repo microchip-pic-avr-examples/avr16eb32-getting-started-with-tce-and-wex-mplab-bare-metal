@@ -92,7 +92,7 @@ void Stairs_Pattern_Set(void)
 
 <br><img src="../images/Set_as_main_project2.png">
 
- 1. Build the **WEX_PGM_8Channels_Patterns.X** project: click on **Clean and Build Project**.
+ 4. Build the **WEX_PGM_8Channels_Patterns.X** project: click on **Clean and Build Project**.
 
 <br><img src="../images/Clean_and_build2.png">
 

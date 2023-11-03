@@ -73,7 +73,7 @@ void Amplitude_Value_Set(uint16_t value)
 
 <br><img src="../images/Set_as_main_project.png">
 
- 1. Build the **TCE_DS_4PWM_Signals.X** project: click on **Clean and Build Project**.
+ 4. Build the **TCE_DS_4PWM_Signals.X** project: click on **Clean and Build Project**.
 
 <br><img src="../images/Clean_and_build.png">
 
