@@ -1,6 +1,6 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Use Case 3: Generate Eight Complementary Pulse-Width Modulation Signals Using the TCE and WEX modules
+## Generate Eight Complementary Pulse-Width Modulation Signals Using the TCE and WEX modules
 
 Below is an example of how to set a Timer Counter Type E (TCE) and a Waveform Extension (WEX) instance to generate eight complementary Pulse-Width Modulation (PWM) signals at 20 kHz with a variable duty cycles using the buffering scheme. The signals are in pairs of two and are not overlapping due to the added dead time, a feature which is essential in Motor Control for avoiding the shoot-through current in transistor switching. The update of the Compare registers will happen during the compare match interrupts for each channel. In this example the fault is highlighted as well. When a software event is triggered all the signals are driven low. This happens every 250 μs. To do this, the WEX will be configured for fault detection and the Event System (EVSYS) will be configured to generate a software event. In this example the WEX module is used as a timer extension, not in Pattern Generation mode.
 

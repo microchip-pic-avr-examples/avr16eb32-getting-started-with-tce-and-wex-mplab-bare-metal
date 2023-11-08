@@ -1,8 +1,8 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Use Case 2: Generate Patterns Using WEX
+## Generate Patterns Using WEX
 
-A basic use case of the timer’s waveform extension is to set a pattern for the output signals that changes periodically. The program will toggle the pins (complementary pattern) every 25 μs using software delay for ten times. After another 250 μs a stair-like pattern will be generated, with 5 μs delay between each step. After another 250 μs delay, the process repeats.
+This use case shows how the TCE’s waveform extension is configured to set a pattern for the output signals that changes periodically. The program will toggle the pins (complementary pattern) every 25 μs using software delay for ten times. After another 250 μs a stair-like pattern will be generated, with 5 μs delay between each step. After another 250 μs delay, the process repeats.
 
 ## Related Documentation
 

@@ -266,6 +266,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/repos/avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal/TCE_DS_4PWM_Signals/TCE_DS_4PWM_Signals.X/debug/free/TCE_DS_4PWM_Signals_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -360,7 +362,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="AVR-Ex_DFP" vendor="Microchip" version="2.5.176"/>
+        <pack name="AVR-Ex_DFP" vendor="Microchip" version="2.7.184"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

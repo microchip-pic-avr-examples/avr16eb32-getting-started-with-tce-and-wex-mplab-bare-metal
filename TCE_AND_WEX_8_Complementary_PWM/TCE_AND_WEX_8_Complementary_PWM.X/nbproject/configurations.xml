@@ -356,13 +356,13 @@
         <targetDevice>AVR16EB32</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>nEdbgTool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="AVR-Ex_DFP" vendor="Microchip" version="2.5.176"/>
+        <pack name="AVR-Ex_DFP" vendor="Microchip" version="2.7.184"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -502,6 +502,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1fff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/repos/avr16eb32-getting-started-with-tce-and-wex-mplab-bare-metal/TCE_AND_WEX_8_Complementary_PWM/TCE_AND_WEX_8_Complementary_PWM.X/debug/pro/TCE_AND_WEX_8_Complementary_PWM_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

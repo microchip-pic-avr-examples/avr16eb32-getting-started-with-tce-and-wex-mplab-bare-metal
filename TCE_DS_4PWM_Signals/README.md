@@ -1,6 +1,6 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Use Case 1: Generate PWM Signals Using TCE
+## Generate PWM Signals Using TCE
 
 Below is an example of how to set a Timer/Counter Type E (TCE) instance to generate four Pulse-Width Modulation (PWM) signals at 10 kHz with a 20%, 40%, 60% and 80% duty cycles. In this example the scaling feature of the values set in compare registers is highlighted, as well as the high resolution feature. The user can increase the PWM signal resolution up to 3 bits.
 
